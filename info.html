@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shivani Chaudhary - Portfolio</title>
+    <style>
+        body { background-color: #f0f4f8; color: #333; font-family: Arial, sans-serif; margin: 0; }
+        header, footer { background-color: #142850; color: #fff; padding: 1em 2em; }
+        section { padding: 2em; margin-bottom: 1em; }
+        h1, h2 { color: #27496d; }
+        .gallery img { width: 200px; height: auto; margin: 0.5em; border-radius: 8px; }
+        .skills-table { width: 50%; border-collapse: collapse; margin-bottom: 1em; }
+        .skills-table th, .skills-table td { border: 1px solid #27496d; padding: 0.4em; text-align: center; }
+        .strengths ul, .hobbies ol { padding-left: 1.2em; }
+        .contact-form input, .contact-form textarea { display: block; margin-bottom: 1em; width: 90%; }
+        nav a { color: #f9d423; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 id="home">Shivani Chaudhary</h1>
+    <nav>
+        <a href="#about">About</a> | 
+        <a href="#gallery">Gallery</a> | 
+        <a href="#skills">Skills</a> | 
+        <a href="#hobbies">Hobbies</a> | 
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Welcome! <b>I am a passionate web developer</b> specializing in <i>minimalist, accessible design</i> and modern technologies.<br>
+        <u>I strive for clean, sustainable code</u>.
+    </p>
+    <p>
+        Jump to <a href="#gallery">Gallery</a> or <a href="#skills">Skills</a>.
+    </p>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <img src="mypic.jpg" alt="Profile photo of Your Name" style="width:220px;">
+    <img src="project.jpg" alt="Screenshot of a web project" style="width:220px;">
+</section>
+
+<section id="skills">
+    <h2>Skills & Proficiency</h2>
+    <table class="skills-table">
+        <tr><th>Skill</th><th>Level</th></tr>
+        <tr><td>HTML5</td><td>Expert</td></tr>
+        <tr><td>CSS3</td><td>Intermediate</td></tr>
+        <tr><td>JavaScript</td><td>Intermediate</td></tr>
+        <tr><td>Python</td><td>Intermediate</td></tr>
+    </table>
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <ol>
+        <li>Photography</li>
+        <li>Cycling</li>
+        <li>Reading</li>
+    </ol>
+    <h3>Strengths</h3>
+    <ul>
+        <li>Problem-solving</li>
+        <li>Creativity</li>
+        <li>Collaboration</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="full_name" value="Shivani Chaudhary" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="shivanichaudhary300487@gmail.com" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" value="Hi [Your Name], I'm interested in learning more about your work and potential collaboration opportunities!" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section>
+    <h2>My Art</h2>
+    <canvas id="myCanvas" width="150" height="150" style="border:1px solid #27496d;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#00909e";
+        ctx.fillRect(20, 20, 110, 60); // Draw rectangle
+        ctx.beginPath();
+        ctx.arc(75, 100, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = "#e6e6ea";
+        ctx.fill(); // Draw circle
+    </script>
+</section>
+
+<section>
+    <h2>Introduction Video</h2>
+    <video width="320" height="240" controls>
+        <source src="intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+<section>
+    <h2>Background Music</h2>
+    <audio controls>
+        <source src="background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<footer>
+    <p>Connect with me on 
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </p>
+    <p>&copy; 2025 Your Name</p>
+</footer>
+
+</body>
+</html>
